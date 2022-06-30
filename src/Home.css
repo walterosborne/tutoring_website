@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  text-decoration: none;
+}
+#navbar{
+  position: fixed;
+  top:0vh;
+}
+#bg{
+  background-position: center;
+}
+.title{
+  position: relative;
+  left: 63vw;
+  color: rgb(220, 220, 92);
+  font-size: 10vh;
+  text-shadow: -2px 2px 0 darkgray;
+  font-family: 'Arvo', serif;
+}
+#first{
+  top:14.5vh
+}
+#second{
+  top: 42vh
+}
+#third{
+  top: 69.5vh
+}
+#arrow{
+  left: 60vw;
+  width: 10vw;
+  position: absolute;
+  bottom: 3vh;
+}
+
+#info{
+  height: 200vh;
+  background-image: url('./color.jpg');
+  background-size: cover;
+  text-align: center;
+  color: white;
+  text-shadow: -1px 1px 0 black;
+}
+
+.row{
+  height: 63vh;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+  padding: 2vw;
+}
+.row img{
+  max-height: 45vh;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  font-size: 4vh;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+}
+h3{
+  text-shadow: -2px 2px 0 darkgray;
+  font-family: 'Arvo', serif;
+  color: rgb(220, 220, 92);
+}
+button{
+  border-radius: 20%;
+  margin-top: 4vh;
+  height: 10vh;
+  width:fit-content;
+  background-color: rgb(220, 220, 92);
+  font-family: 'Arvo', serif;
+  font-size: 5vh;
+  text-shadow: -2px 2px 0 darkgray;
+  cursor: pointer;
+  text-align: center;
+  z-index: 2;
+  opacity: 100%;
+}
+p{
+  margin-top: 2vh;
+  font-size: smaller;
+}
+@media (max-width:800px) {
+    .text{
+      position: relative;
+      width: 90vw;
+      flex-direction: row;
+      display: contents;
+      z-index: 2;
+    }
+    h3,p{
+      position: relative;
+      z-index: 2;
+    }
+    .row{
+      flex-wrap: wrap;
+      border: 2px solid grey;
+    }
+    button{
+      position: relative;
+      height: fit-content;
+      width: 80vw;
+      z-index: 2;
+    }
+    .row img{
+      position: absolute;
+      width: 90%;
+      opacity: 50%;
+      z-index: 1;
+    }
+    .title{
+      font-size: 15vw;
+      left: 40vw;
+    }
+    #arrow{
+      top: 66vh;
+      left: 50vw;
+      width: 40vw;
+    }
+    #first{
+      top:10vh
+    }
+    #second{
+      top:35vh
+    }
+    #third{
+      top: 60vh
+    }
+}
+

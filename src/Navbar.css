@@ -1,0 +1,64 @@
+
+#bar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: rgb(220, 220, 92);
+    z-index: 100;
+}
+#logoside{
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+    font-family: 'Arvo', serif;
+    font-family: 'Play', sans-serif;
+    margin-bottom: 1vh;
+}
+
+#homelink{
+    flex-direction: row;
+    display: flex;
+
+    align-items: center;
+    color:black;
+}
+
+#logoside img{
+    height:5vh;
+    width: fit-content;
+    margin-left: 1vw;
+}
+#links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+#links h3{
+    text-decoration: underline;
+    text-shadow: none;
+    font-size: 4vh;
+    text-align: center;
+}
+@media (max-width:800px) {
+    #logoside{
+        font-size: 6vw;
+    }
+    #stafflink,#contact{
+        color: darkgray;
+    }
+    #plans{
+        color: black;
+    }
+}
+@media (min-width:800px) {
+    #links h3{
+        color: black;
+    }
+}
+
